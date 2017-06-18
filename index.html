@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Friendly</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  ​<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<style>
+    .container {
+     padding-right: 15px;
+     padding-left: 15px;
+     margin-right: auto;
+     margin-left: auto;
+    }
+    #header {
+     background-color: #4267b2;
+     color: white;
+    }
+    #white-text {
+     color: white;
+    }
+   img {
+     height: 50px;
+     width: 40px;
+     display: inline-block;
+     position: relative;
+     padding-top: 7px;
+     padding-bottom: 4px;
+     margin-right: 5px;
+   }
+   #header ul .glyphicon {
+     font-size: 20px;
+  }
+  #header .navbar-nav.navbar-right li span .badge{
+    background-color: red;
+    font-size: 11px;
+    padding: 0px 1px 1px 1px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+  #search {
+    width: 300px;
+    height: 28px;:
+  }
+  #search-icon {
+    width: 35px;
+    height: 28px;
+  }
+   #wrapper {
+     margin-top: 16px;
+     margin-bottom: 16px;
+   }
+   #menu, #main, #sidebar {
+     background-color: #e9ebee;
+     height: 800px;
+   }
+   #main {
+     overflow: auto;
+   }
+   #main::-webkit-scrollbar {
+    display: none;
+  }
+  .comment {
+    margin: 0;
+  }
+   .list-heading {
+     padding: 20px 15px 0 15px;
+   }
+   #circle {
+     float: right;
+   }
+   #like-span {
+     margin-right: 10px;
+   }
+   #comment-span {
+     margin-right: 10px;
+   }
+   #emoji {
+     height: 40px;
+     width: 30px;
+     bottom: 0px;
+   }
+   .panel-body .glyphicon {
+     margin-left: 10px;
+     margin-right: 4px;
+   }
+   .text-post {
+     margin-bottom: 15px;
+     margin-top: 0;
+   }
+   #img-post {
+     height: 350px;
+     width: 570px;
+   }
+</style>
+</head>
+<body id="top">
+
+  <!--header starts-->
+    <nav class="navbar navbar-default" id="header">
+    <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" id="white-text">Friendly</a>
+    </div>
+    <form class="navbar-form navbar-left">
+       <div class="input-group">
+          <input type="text" class="form-control" id="search" placeholder="Search">
+          <div class="input-group-btn">
+             <button class="btn btn-default" id="search-icon" type="submit">
+                <i class="glyphicon glyphicon-search"></i>
+             </button>
+          </div>
+       </div>
+    </form>
+    <ul class="nav navbar-nav navbar-right">
+      <li><span><img src="https://fb-s-c-a.akamaihd.net/h-ak-fbx/v/t1.0-1/p160x160/14729115_188456914934329_8769368999607280431_n.jpg?oh=98aed2c55996a600d7f84e2ba33e0245&oe=59DC1092&__gda__=1507509250_d750db88576e0b2e7142af9a72d8df96"><a href="#" id="white-text">Apoorva</a></span></li>
+      <li><a href="#" id="white-text"><span>Home</span></a></li>
+      <li title="friend-request"><a href="#" id="white-text"><span class="glyphicon glyphicon-user" aria-hidden="true"><span class="badge">2</span></span></a></li>
+      <li title="messages"><a href="#" id="white-text"><span class="glyphicon glyphicon-envelope" aria-hidden="true"><span class="badge">8</span></span></a></li>
+      <li title="notifications"><a href="#" id="white-text"><span class="glyphicon glyphicon-globe" aria-hidden="true"><span class="badge">16</span></span></a></li>
+      <li title="help"><a href="#" id="white-text"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a></li>
+      <li title="settings"><a href="#" id="white-text"><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a></li>
+    </ul>
+  </div>
+  </nav>
+<!--header ends-->
+
+<!--grid starts-->
+<div class="container-fluid" id="wrapper">
+  <div class="row">
+    <!--first column menu starts-->
+    <div class="hidden-xs col-sm-4 col-md-3">
+       <div id="menu">
+         <ul class="nav nav-pills nav-stacked">
+              <li role="presentation"><span><img src="https://fb-s-c-a.akamaihd.net/h-ak-fbx/v/t1.0-1/p160x160/14729115_188456914934329_8769368999607280431_n.jpg?oh=98aed2c55996a600d7f84e2ba33e0245&oe=59DC1092&__gda__=1507509250_d750db88576e0b2e7142af9a72d8df96"><a href="#">Apoorva Agarwal</a></span></li>
+              <li role="presentation"><a href="#"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> News Feed <span class="badge" id="circle">5</span></a></li>
+              <li role="presentation"><a href="#"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Messenger <span class="badge" id="circle">50</span></a></li>
+         </ul>
+         <ul class="nav nav-pills nav-stacked">
+            <p class="list-heading"> Shortcuts </p>
+              <li role="presentation"><a href="#"><span class="glyphicon glyphicon-text-background" aria-hidden="true"></span> AcadView <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true" id="circle"></span></a></li>
+              <li role="presentation"><a href="#"><span class="glyphicon glyphicon-header" aria-hidden="true"></span> HTML, CSS Group <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true" id="circle"></span></a></li>
+              <li role="presentation"><a href="#"><span class="glyphicon glyphicon-xbt" aria-hidden="true"></span> Bootstrap Fundas <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true" id="circle"></span></a></li>
+         </ul>
+         <ul class="nav nav-pills nav-stacked">
+            <p class="list-heading"> Explore </p>
+              <li role="presentation"><a href="#"><span class="glyphicon glyphicon-yen" aria-hidden="true"></span> Groups <span class="badge" id="circle">6</span></a></li>
+              <li role="presentation"><a href="#"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Events <span class="badge" id="circle">2</span></a></li>
+              <li role="presentation"><a href="#"><span class="glyphicon glyphicon-duplicate" aria-hidden="true"></span> Pages <span class="badge" id="circle">10</span></a></li>
+         </ul>
+       </div>
+    </div>
+    <!--first colum,n m,enu ends-->
+
+    <!--second main column starts-->
+    <div class="col-xs-12 col-sm-8 col-md-6">
+      <div id="main">
+        <!--First post starts-->
+        <div class="panel panel-default">
+           <div class="panel-heading">
+              <h3 class="panel-title"><img src="https://fb-s-a-a.akamaihd.net/h-ak-fbx/v/t1.0-1/p160x160/14600842_163112667477070_8940889574175163583_n.jpg?oh=622ffebd57b531a3adaf6e6c6c66b431&oe=59E67E2D&__gda__=1508264893_475c82b067ab219e77955c867b1ea134"><a href="#">Priya Khandelwal</a></h3>
+           </div>
+           <div class="panel-body">
+             <div><h3 class="text-post">Searching for a new laptop online is basically forcing your current computer to dig its own grave. </h3></div>
+              <div>
+                <span><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Like</span>
+                <span><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Comment</span>
+              </div>
+           </div>
+           <div class="panel-footer">
+             <!--first comment for first post starts-->
+             <div class="media">
+                 <div class="media-left">
+                     <a href="#">
+                        <img class="media-object" src="https://fb-s-d-a.akamaihd.net/h-ak-fbx/v/t1.0-1/p160x160/18700182_268241956983122_6040387275114389584_n.jpg?oh=d4da56c92dab15860045ce82c742236c&oe=59D96FB9&__gda__=1503674921_0e71c3e7e1dee3d56b8f6d691b80e764" alt="flower">
+                     </a>
+                 </div>
+                 <div class="media-body">
+                      <p class="comment">
+                         <span><a href="#">Nikita Sharma </a></span></br>
+                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTN21Ij8f1Uabmml8TrLokfNSJwUFuybAEUpO4hCY9Pbt33Yg9" id="emoji"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTN21Ij8f1Uabmml8TrLokfNSJwUFuybAEUpO4hCY9Pbt33Yg9" id="emoji"></p>
+                        <div>
+                          <small>
+                        	   <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" id="like-span"><a href="#">Like </a></span>
+                             <span class="glyphicon glyphicon-comment" aria-hidden="true" id="comment-span"><a href="#">Comment</a></span>
+                          </small>
+                        </div>
+                 </div>
+             </div>
+             <!--first comment for first post ends-->
+             <!--second comment for first post starts-->
+             <div class="media">
+                 <div class="media-left">
+                     <a href="#">
+                        <img class="media-object" src="https://fb-s-d-a.akamaihd.net/h-ak-fbx/v/t1.0-1/p100x100/19146292_1374781942614439_6339519215404808331_n.jpg?oh=79c095303f58a18c0a94b2bec11c5a79&oe=59CA4BD2&__gda__=1508331388_d571fec5a02f38e82ef55061894fa80f" alt="flower">
+                     </a>
+                 </div>
+                 <div class="media-body">
+                      <p class="comment">
+                         <span><a href="#">Anshul Vijay </a></span> totally true</br>
+                      </p>
+                        <div>
+                          <small>
+                        	   <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" id="like-span"><a href="#">Like </a></span>
+                             <span class="glyphicon glyphicon-comment" aria-hidden="true" id="like-span"><a href="#">Comment </a></span>
+                          </small>
+                        </div>
+                 </div>
+             </div>
+             <!--second comment for firt post ends-->
+             <div class="media">
+                 <div class="media-left">
+                     <a href="#">
+                        <img class="media-object" src="https://fb-s-c-a.akamaihd.net/h-ak-fbx/v/t1.0-1/p160x160/14729115_188456914934329_8769368999607280431_n.jpg?oh=98aed2c55996a600d7f84e2ba33e0245&oe=59DC1092&__gda__=1507509250_d750db88576e0b2e7142af9a72d8df96" alt="flower">
+                     </a>
+                 </div>
+                 <div class="media-body">
+                        <input placeholder="Write a comment..." style="width: 100%;margin-top: 15px;">
+                 </div>
+             </div>
+           </div>
+        </div>
+        <!--sFirst post ends-->
+
+        <!--second post starts-->
+        <div class="panel panel-default">
+           <div class="panel-heading">
+              <h3 class="panel-title"><img src="https://fb-s-a-a.akamaihd.net/h-ak-fbx/v/t1.0-1/p100x100/17098615_1385609211499990_1154360337697553123_n.jpg?oh=51893f8c8e846cd89e4fa2ad4e1c6642&oe=59D2EA5C&__gda__=1503671794_cc953af787dd10c1d9e25a19cab66e4b"><a href="#">Dr. Jagdev Singh</a></h3>
+           </div>
+           <div class="panel-body">
+              <div>
+                  <blockquote>
+                      <p>Kites rise highest against the wind, not with it.</p>
+                      <footer>Sir Winston Churchill</footer>
+                  </blockquote>
+              </div>
+              <div>
+                <span><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Like</span>
+                <span><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Comment</span>
+              </div>
+           </div>
+           <div class="panel-footer">
+             <!--first comment for second post starts-->
+             <div class="media">
+                 <div class="media-left">
+                   <a href="#">
+                      <img class="media-object" src="https://fb-s-b-a.akamaihd.net/h-ak-fbx/v/t1.0-1/c0.0.100.100/p100x100/18519865_1553549201322051_2553694315550915060_n.jpg?oh=f3ee2944a6d313343d22e3ae829e3f1d&oe=59E5FC0D&__gda__=1507488104_289ca0d48df63fa8ef94381455e92f11" alt="flower">
+                   </a>
+               </div>
+                 <div class="media-body">
+                      <p class="comment">
+                        <span><a href="#">Anindya Bose</a></span></br>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSvQizZ5ec30sYFPxeJSx6lJzc1yHG3exceCEoqRZKqTS_NHy5" id="emoji"></p>
+                      <div>
+                        <small>
+                       	   <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" id="like-span" id="like-span"><a href="#">Like </a></span>
+                           <span class="glyphicon glyphicon-comment" aria-hidden="true" id="like-span" id="like-span"><a href="#">Comment </a></span>
+                        </small>
+                       </div>
+                 </div>
+             </div>
+             <!--first comment for second post ends-->
+             <!--second comment for second post starts-->
+             <div class="media">
+                 <div class="media-left">
+                   <a href="#">
+                      <img class="media-object" src="https://fb-s-d-a.akamaihd.net/h-ak-fbx/v/t1.0-1/p100x100/14695556_1674593699520050_4975242476459818771_n.jpg?oh=ca85e8b209b4b23bce27b539eae54443&oe=59CDA2DA&__gda__=1507965556_2de9ec646b0f88090a6b92111cef958f" alt="flower">
+                   </a>
+               </div>
+                 <div class="media-body">
+                      <p class="comment">
+                        <span><a href="#">Swati Sharma</a></span></br>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9-Kx4eWkO9bzNA-Z9_X_kDVESpsMg3tSFHN7Q04aG9IHQR7bF7Q" id="emoji"></p>
+                      <div>
+                        <small>
+                       	   <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" id="like-span"><a href="#">Like </a></span>
+                           <span class="glyphicon glyphicon-comment" aria-hidden="true" id="like-span"><a href="#">Comment </a></span>
+                        </small>
+                       </div>
+                 </div>
+             </div>
+              <!--second comment for second post ends-->
+              <div class="media">
+                  <div class="media-left">
+                      <a href="#">
+                         <img class="media-object" src="https://fb-s-c-a.akamaihd.net/h-ak-fbx/v/t1.0-1/p160x160/14729115_188456914934329_8769368999607280431_n.jpg?oh=98aed2c55996a600d7f84e2ba33e0245&oe=59DC1092&__gda__=1507509250_d750db88576e0b2e7142af9a72d8df96" alt="flower">
+                      </a>
+                  </div>
+                  <div class="media-body">
+                         <input placeholder="Write a comment..." style="width: 100%;margin-top: 15px;">
+                  </div>
+              </div>
+           </div>
+        </div>
+        <!--second post ends-->
+
+        <!--third post having image starts-->
+        <div class="panel panel-default">
+           <div class="panel-heading">
+              <h3 class="panel-title"><img src="https://fb-s-b-a.akamaihd.net/h-ak-fbx/v/t1.0-1/c40.0.160.160/p160x160/12341520_929144863823113_5325832297320263341_n.jpg?oh=efeb006d1c61abf46028e053902a8fab&oe=59CF3BFB&__gda__=1506845342_fb3fcf2a589ba5af3ae6488f433796bf"><a href="#">Raghav Agarwal</a></h3>
+           </div>
+           <div class="panel-body">
+              <div>
+                  <img src="https://s-media-cache-ak0.pinimg.com/originals/13/ff/3f/13ff3f25353bd8d7d9fb234278a88535.jpg" class="img-responsive" id="img-post"alt="Responsive image">
+              </div>
+              <div>
+                <span><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Like</span>
+                <span><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Comment</span>
+              </div>
+           </div>
+           <div class="panel-footer">
+             <!--first comment for third post starts-->
+             <div class="media">
+                 <div class="media-left">
+                   <a href="#">
+                      <img class="media-object" src="https://fb-s-b-a.akamaihd.net/h-ak-fbx/v/t1.0-1/p100x100/12742682_956697114417649_208304350175553425_n.jpg?oh=c519e6ec1dd0e0bff7c342bad3c4e105&oe=59D6939B&__gda__=1507698371_8107ee8c29a29d6440056d0cee4f2b80" alt="flower">
+                   </a>
+               </div>
+                 <div class="media-body">
+                      <p class="comment">
+                        <span><a href="#">Rafay Hameed</a></span></br>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwXly5SiatPDRFiLOBtqz97dDhMdwusUSEGU6KvBYGv7pCvzgN4A" id="emoji"></p>
+                        <div>
+                          <small>
+                             <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" id="like-span"><a href="#">Like </a></span>
+                             <span class="glyphicon glyphicon-comment" aria-hidden="true" id="like-span"><a href="#">Comment </a></span>
+                          </small>
+                        </div>
+                 </div>
+             </div>
+             <!--first comment for third post ends-->
+             <!--second comment for third post starts-->
+             <div class="media">
+                 <div class="media-left">
+                   <a href="#">
+                      <img class="media-object" src="https://fb-s-d-a.akamaihd.net/h-ak-fbx/v/t1.0-0/p370x247/13659090_1157056577706614_3408545175839836839_n.jpg?oh=ae50ee75b644b446452427bcc57e0b2d&oe=59E952F3&__gda__=1506500957_5912bc88ffbe48942900b3bb1127e06c" alt="flower">
+                   </a>
+               </div>
+                 <div class="media-body">
+                      <p class="comment">
+                        <span><a href="#">Hitesh Khandal</a></span> Blessed to have you as a friend</br>
+                        </p>
+                        <div>
+                          <small>
+                             <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" id="like-span"><a href="#">Like </a></span>
+                             <span class="glyphicon glyphicon-comment" aria-hidden="true" id="like-span"><a href="#">Comment </a></span>
+                          </small>
+                        </div>
+                 </div>
+             </div>
+             <!--second comment for third post ends-->
+             <div class="media">
+                 <div class="media-left">
+                     <a href="#">
+                        <img class="media-object" src="https://fb-s-c-a.akamaihd.net/h-ak-fbx/v/t1.0-1/p160x160/14729115_188456914934329_8769368999607280431_n.jpg?oh=98aed2c55996a600d7f84e2ba33e0245&oe=59DC1092&__gda__=1507509250_d750db88576e0b2e7142af9a72d8df96" alt="flower">
+                     </a>
+                 </div>
+                 <div class="media-body">
+                        <input placeholder="Write a comment..." style="width: 100%;margin-top: 15px;">
+                 </div>
+             </div>
+           </div>
+        </div>
+        <!--third post having image ends-->
+
+        <!--fourth post having vedio starts-->
+        <div class="panel panel-default">
+           <div class="panel-heading">
+              <h3 class="panel-title"><img src="https://fb-s-a-a.akamaihd.net/h-ak-fbx/v/t1.0-1/p160x160/18921752_861692563968853_3038458362767371597_n.jpg?oh=52c5bc7169a407c32f00e7ebbc41e87c&oe=59E84705&__gda__=1508462741_5a51ea7942d929b67c7e928be124090c"><a href="#">Aditya Singh</a></h3>
+           </div>
+           <div class="panel-body">
+             <div class="embed-responsive embed-responsive-4by3">
+                 <iframe width="640" height="360" src="https://www.youtube.com/embed/mBsWZzbkLMA?ecver=1" frameborder="0" allowfullscreen></iframe>
+             </div>
+              <div>
+                <span><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> Like</span>
+                <span><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Comment</span>
+              </div>
+           </div>
+           <div class="panel-footer">
+             <!--first comment for fourth post starts-->
+             <div class="media">
+                 <div class="media-left">
+                   <a href="#">
+                      <img class="media-object" src="https://fb-s-a-a.akamaihd.net/h-ak-fbx/v/t1.0-1/p160x160/18010074_1884058701835495_8240729066773906289_n.jpg?oh=01896f7f9011b788c29f22c167a61993&oe=59CDFF49&__gda__=1508332007_82e76b65c6fd5d7e151a299c422ad144" alt="flower">
+                   </a>
+               </div>
+                 <div class="media-body">
+                      <p class="comment">
+                        <span><a href="#">Surbhi Arora</a></span> lovely vedio Aditya</br>
+                        <img src="https://s-media-cache-ak0.pinimg.com/736x/79/fa/49/79fa4998e0ac325ad66983b7d1e57994.jpg" id="emoji"></p>
+                      <div>
+                        <small>
+	                          <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" id="like-span"><a href="#">Like </a></span>
+                            <span class="glyphicon glyphicon-comment" aria-hidden="true" id="l,ike-span"><a href="#">Comment </a></span>
+                        </small>
+                      </div>
+                  </div>
+             </div>
+             <!--first comment for fourth post ends-->
+             <!--seconjd comment for fourth post starts-->
+             <div class="media">
+                 <div class="media-left">
+                   <a href="#">
+                      <img class="media-object" src="https://fb-s-a-a.akamaihd.net/h-ak-fbx/v/t1.0-1/c0.17.100.100/p100x100/18222071_286054951842525_6336470187691281062_n.jpg?oh=87213ad4cd266184315276698280e0d7&oe=59CB1E63&__gda__=1506732038_d54f427dfb4d5fbacf17f3c69d7e13f0" alt="flower">
+                   </a>
+               </div>
+                 <div class="media-body">
+                      <p class="comment">
+                        <span><a href="#">Devisha Jain</a></span> one of my favourites</br>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIyR41UQPUGKq3vnoJvop02Ye-PZU6o7GDBNAdQh5M_gtyS29WvA" id="emoji"></p>
+                      <div>
+                        <small>
+                            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" id="like-span"><a href="#">Like </a></span>
+                            <span class="glyphicon glyphicon-comment" aria-hidden="true" id="like-span"><a href="#">Comment </a></span>
+                        </small>
+                      </div>
+                  </div>
+             </div>
+             <!--second comment for fourth post ends-->
+             <div class="media">
+                 <div class="media-left">
+                     <a href="#">
+                        <img class="media-object" src="https://fb-s-c-a.akamaihd.net/h-ak-fbx/v/t1.0-1/p160x160/14729115_188456914934329_8769368999607280431_n.jpg?oh=98aed2c55996a600d7f84e2ba33e0245&oe=59DC1092&__gda__=1507509250_d750db88576e0b2e7142af9a72d8df96" alt="flower">
+                     </a>
+                 </div>
+                 <div class="media-body">
+                        <input placeholder="Write a comment..." style="width: 100%;margin-top: 15px;">
+                 </div>
+             </div>
+           </div>
+        </div>
+        <!--fourth post having vedio ends-->
+        <button type="button" class="btn btn-primary btn-block">Load more</button>
+      </div>
+    </div>
+    <!--second main column ends-->
+
+    <!--third column-the sidebar starts-->
+    <div class="hidden-xs hidden-sm col-md-3">
+      <div id="sidebar">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+           <li role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">
+            <span class="glyphicon glyphicon-signal" aria-hidden="true"></span>
+           </a></li>
+           <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
+             <span class="glyphicon glyphicon-tower" aria-hidden="true"></span>
+           </a></li>
+           <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">
+            <span class="glyphicon glyphicon-knight" aria-hidden="true"></span>
+           </a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+           <div role="tabpanel" class="tab-pane active" id="top-trends">
+             <div class="list-group">
+               <a href="#" class="list-group-item active">
+                 <h4 class="list-group-item-heading">Lashkar-e-Taiba</h4>
+                 <p class="list-group-item-text"> <span>   Kashmir unrest: 14 people, including LeT militant Junaid Matoo, killed in..-<a href="#">firstpost.com</a></span></p>
+                 <br><p class="list-group-item-text">  <span>  Unrest in Darjeeling is a deep rooted conspiracy..-<a href="#">economictimes.indiatimes.com</a></span>  </p>
+                 <br>
+               </a>
+             </div>
+
+             <div class="list-group">
+               <a href="#" class="list-group-item active">
+                 <h4 class="list-group-item-heading">Gorkhaland</h4>
+
+               </a>
+             </div>
+           </div>
+
+           <div role="tabpanel" class="tab-pane" id="politics">
+             <div class="list-group">
+               <a href="#" class="list-group-item active">
+                 <h4 class="list-group-item-heading">Bhartiya Janata Party</h4>
+                 <p class="list-group-item-text">
+                   <span>
+                    BJP creates history, wins Shimla Municipal Corporation-<a href="#">indianexpress.com</a>
+                  </span>
+                 </p>
+               </a>
+             </div>
+
+             <div class="list-group">
+               <a href="#" class="list-group-item active">
+                 <h4 class="list-group-item-heading">Pranab Mukherjee</h4>
+                 <p class="list-group-item-text">
+                   <span>
+                    President Pranab Mukherjee inaugurates phase 1 of Bengaluru..-<a href="#">indianexpress.com</a>
+                  </span>
+                 </p>
+               </a>
+             </div>
+           </div>
+
+           <div role="tabpanel" class="tab-pane" id="sports">
+             <div class="list-group">
+               <a href="#" class="list-group-item active">
+                 <h4 class="list-group-item-heading">Tennis</h4>
+                 <p class="list-group-item-text">
+                   <span>
+                    Roger Federer stunned by Tommy Haas on return..-<a href="#">hindustantimes.com</a>
+                  </span>
+                 </p>
+               </a>
+             </div>
+
+             <div class="list-group">
+               <a href="#" class="list-group-item active">
+                 <h4 class="list-group-item-heading">India vs. Pakistan</h4>
+                 <p class="list-group-item-text">
+                   <span>
+                    India vs Pakistan, ICC Champions Trophy Final,:5 most..-<a href="#">hindustantimes.com</a>
+                  </span>
+                 </p>
+               </a>
+             </div>
+           </div>
+        </div>
+
+      </div>
+  </div>
+  <!--third column-the sidebar ends-->
+</div>
+
+
+
+
+  <!--footer start-->
+    <ul class="nav nav-pills pull-right">
+      <li role="presentation"><a href="#">About Us</a></li>
+      <li role="presentation"><a href="#">Privacy</a></li>
+      <li role="presentation"><a href="#">Advertising</a></li>
+      <li role="presentation"><a href="#">Cookies</a></li>
+      <li role="presentation"><a href="#">Ad Choices</a></li>
+      <li role="presentation"><a href="#">Terms</a></li>
+      <li role="presentation"><a href="#">Rate Us</a></li>
+      <li role="presentation"><a href="#top">Go To Top</a></li>
+    </ul>
+    <!--footer ends-->
+</body>
