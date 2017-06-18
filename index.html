@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
   <title>Friendly</title>
@@ -63,6 +63,19 @@
    #main {
      overflow: auto;
    }
+   #day {
+     position: relative;
+     width: 400px;
+     height: 50px;
+   }
+   #dsy {
+     background-color: gray;
+     padding-left: 10px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     padding-right: 10px;
+     color: black;
+   }
    #main::-webkit-scrollbar {
     display: none;
   }
@@ -71,6 +84,9 @@
   }
    .list-heading {
      padding: 20px 15px 0 15px;
+   }
+   .nav-stacked a {
+     color: black;
    }
    #circle {
      float: right;
@@ -161,7 +177,28 @@
     <!--second main column starts-->
     <div class="col-xs-12 col-sm-8 col-md-6">
       <div id="main">
-        <!--First post starts-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+             <h3 class="panel-title"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span >  Create a post | <span class="glyphicon glyphicon-picture" aria-hidden="true"></span>  Photo/Vedio Album </h3>
+           </div>
+           <div class="panel-body">
+             <div>
+               <input id="day" placeholder="Hii..Apoorva what's on your mind"></input>
+             </div>
+           </div>
+           <div class="panel-footer">
+             <div class="media">
+               <div class="media-left">
+               </div>
+               <div class="media-body">
+                 <span id="dsy" class="badge"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> Photo/Vedio</span>
+                 <span id="dsy" class="badge"><span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span> Feelings/Activity</span>
+                 <span id="dsy" class="badge">...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+         <!--First post starts-->
         <div class="panel panel-default">
            <div class="panel-heading">
               <h3 class="panel-title"><img src="https://fb-s-a-a.akamaihd.net/h-ak-fbx/v/t1.0-1/p160x160/14600842_163112667477070_8940889574175163583_n.jpg?oh=622ffebd57b531a3adaf6e6c6c66b431&oe=59E67E2D&__gda__=1508264893_475c82b067ab219e77955c867b1ea134"><a href="#">Priya Khandelwal</a></h3>
@@ -187,8 +224,8 @@
                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTN21Ij8f1Uabmml8TrLokfNSJwUFuybAEUpO4hCY9Pbt33Yg9" id="emoji"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTN21Ij8f1Uabmml8TrLokfNSJwUFuybAEUpO4hCY9Pbt33Yg9" id="emoji"></p>
                         <div>
                           <small>
-                        	   <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" id="like-span"><a href="#">Like </a></span>
-                             <span class="glyphicon glyphicon-comment" aria-hidden="true" id="comment-span"><a href="#">Comment</a></span>
+                        	   <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" id="like-span"> <a href="#">Like </a></span>
+                             <span class="glyphicon glyphicon-comment" aria-hidden="true" id="comment-span"> <a href="#">Comment</a></span>
                           </small>
                         </div>
                  </div>
@@ -207,8 +244,8 @@
                       </p>
                         <div>
                           <small>
-                        	   <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" id="like-span"><a href="#">Like </a></span>
-                             <span class="glyphicon glyphicon-comment" aria-hidden="true" id="like-span"><a href="#">Comment </a></span>
+                        	   <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" id="like-span"> <a href="#">Like </a></span>
+                             <span class="glyphicon glyphicon-comment" aria-hidden="true" id="like-span"> <a href="#">Comment </a></span>
                           </small>
                         </div>
                  </div>
@@ -255,7 +292,7 @@
                </div>
                  <div class="media-body">
                       <p class="comment">
-                        <span><a href="#">Anindya Bose</a></span></br>
+                        <span><a href="#">Anindyo Bose</a></span></br>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSvQizZ5ec30sYFPxeJSx6lJzc1yHG3exceCEoqRZKqTS_NHy5" id="emoji"></p>
                       <div>
                         <small>
@@ -279,8 +316,8 @@
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9-Kx4eWkO9bzNA-Z9_X_kDVESpsMg3tSFHN7Q04aG9IHQR7bF7Q" id="emoji"></p>
                       <div>
                         <small>
-                       	   <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" id="like-span"><a href="#">Like </a></span>
-                           <span class="glyphicon glyphicon-comment" aria-hidden="true" id="like-span"><a href="#">Comment </a></span>
+                       	   <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" id="like-span"> <a href="#">Like </a></span>
+                           <span class="glyphicon glyphicon-comment" aria-hidden="true" id="like-span"> <a href="#">Comment </a></span>
                         </small>
                        </div>
                  </div>
@@ -328,8 +365,8 @@
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwXly5SiatPDRFiLOBtqz97dDhMdwusUSEGU6KvBYGv7pCvzgN4A" id="emoji"></p>
                         <div>
                           <small>
-                             <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" id="like-span"><a href="#">Like </a></span>
-                             <span class="glyphicon glyphicon-comment" aria-hidden="true" id="like-span"><a href="#">Comment </a></span>
+                             <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" id="like-span"> <a href="#">Like </a></span>
+                             <span class="glyphicon glyphicon-comment" aria-hidden="true" id="like-span"> <a href="#">Comment </a></span>
                           </small>
                         </div>
                  </div>
@@ -348,8 +385,8 @@
                         </p>
                         <div>
                           <small>
-                             <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" id="like-span"><a href="#">Like </a></span>
-                             <span class="glyphicon glyphicon-comment" aria-hidden="true" id="like-span"><a href="#">Comment </a></span>
+                             <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" id="like-span"> <a href="#">Like </a></span>
+                             <span class="glyphicon glyphicon-comment" aria-hidden="true" id="like-span"> <a href="#">Comment </a></span>
                           </small>
                         </div>
                  </div>
@@ -397,8 +434,8 @@
                         <img src="https://s-media-cache-ak0.pinimg.com/736x/79/fa/49/79fa4998e0ac325ad66983b7d1e57994.jpg" id="emoji"></p>
                       <div>
                         <small>
-	                          <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" id="like-span"><a href="#">Like </a></span>
-                            <span class="glyphicon glyphicon-comment" aria-hidden="true" id="l,ike-span"><a href="#">Comment </a></span>
+	                          <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" id="like-span"> <a href="#">Like </a></span>
+                            <span class="glyphicon glyphicon-comment" aria-hidden="true" id="l,ike-span"> <a href="#">Comment </a></span>
                         </small>
                       </div>
                   </div>
@@ -417,8 +454,8 @@
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIyR41UQPUGKq3vnoJvop02Ye-PZU6o7GDBNAdQh5M_gtyS29WvA" id="emoji"></p>
                       <div>
                         <small>
-                            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" id="like-span"><a href="#">Like </a></span>
-                            <span class="glyphicon glyphicon-comment" aria-hidden="true" id="like-span"><a href="#">Comment </a></span>
+                            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true" id="like-span"> <a href="#">Like </a></span>
+                            <span class="glyphicon glyphicon-comment" aria-hidden="true" id="like-span"> <a href="#">Comment </a></span>
                         </small>
                       </div>
                   </div>
@@ -445,94 +482,56 @@
     <!--third column-the sidebar starts-->
     <div class="hidden-xs hidden-sm col-md-3">
       <div id="sidebar">
-        <!-- Nav tabs -->
-        <ul class="nav nav-tabs" role="tablist">
-           <li role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">
-            <span class="glyphicon glyphicon-signal" aria-hidden="true"></span>
-           </a></li>
-           <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">
-             <span class="glyphicon glyphicon-tower" aria-hidden="true"></span>
-           </a></li>
-           <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">
-            <span class="glyphicon glyphicon-knight" aria-hidden="true"></span>
-           </a></li>
-        </ul>
 
-        <!-- Tab panes -->
-        <div class="tab-content">
-           <div role="tabpanel" class="tab-pane active" id="top-trends">
-             <div class="list-group">
-               <a href="#" class="list-group-item active">
-                 <h4 class="list-group-item-heading">Lashkar-e-Taiba</h4>
-                 <p class="list-group-item-text"> <span>   Kashmir unrest: 14 people, including LeT militant Junaid Matoo, killed in..-<a href="#">firstpost.com</a></span></p>
-                 <br><p class="list-group-item-text">  <span>  Unrest in Darjeeling is a deep rooted conspiracy..-<a href="#">economictimes.indiatimes.com</a></span>  </p>
-                 <br>
-               </a>
-             </div>
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation"class="pull-right"><a href="#Politics" aria-controls="profile" role="tab" data-toggle="tab" class="glyphicon glyphicon-king"></a></li>
+            <li role="presentation" class="pull-right"><a href="#Sports" aria-controls="messages" role="tab" data-toggle="tab" class="glyphicon glyphicon-knight"></a></li>
+            <li role="presentation" class="active pull-right"><a href="#top" aria-controls="home" role="tab" data-toggle="tab" class="glyphicon glyphicon-send"></a></li>
+          </ul>
 
-             <div class="list-group">
-               <a href="#" class="list-group-item active">
-                 <h4 class="list-group-item-heading">Gorkhaland</h4>
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="top">
+              <div class="list-group">
+                <a href="#" class="list-group-item active">
+                  <h4 class="list-group-item-heading">Top Trends</h4>
+                  <p class="list-group-item-text"> <span class="glyphicon glyphicon-send"></span><b> Abu Salem</b><br> 1993 Mumbai blasts: Verdict in case against Abu Salem today ‑ eenaduindia.com</p>
+                  <br><p class="list-group-item-text"> <span class="glyphicon glyphicon-send"></span><b> Aadhaar</b><br>Aadhaar Mandatory for New Bank Account, Transactions Above 50K ‑ thequint.com</p>
+                  <br><p class="list-group-item-text"> <span class="glyphicon glyphicon-send"></span><b> Anantnag District</b><br>Kashmir: 6 policemen killed by terrorists in Anantnag, Lashkar-e-Taiba… ‑ india.com</p>
+                  <br><p class="list-group-item-text"> <span class="glyphicon glyphicon-send"></span><b> HTC</b><br>'Squeeze-able' phone HTC U11 launched in India for Rs. 51,990 ‑ thehindu.com</p>
+                </a>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="Politics">
+              <div class="list-group">
+                <a href="#" class="list-group-item active">
+                  <h4 class="list-group-item-heading">Politics</h4>
+                  <p class="list-group-item-text"> <span class="glyphicon glyphicon-king"></span><b> Abu Bakr al-Baghdadi</b><br>Russia claims they killed ISIS leader Abu Bakr al-Baghdadi ‑ nypost.com </p>
+                  <br><p class="list-group-item-text"> <span class="glyphicon glyphicon-king"></span><b> Darjeeling</b><br>Stray incidents of violence in Darjeeling hills;6 detained ‑economictimes.indiatimes.com</p>
+                  <br><p class="list-group-item-text"> <span class="glyphicon glyphicon-king"></span><b> Helmut Kohl</b><br>Helmut Kohl, father of German reunification, dies at 87 ‑ reuters.com</p>
+                  <br><p class="list-group-item-text"> <span class="glyphicon glyphicon-king"></span><b> Amit Shah</b><br>Amit Shah arrives in Maharashtra; to meet Uddhav Thackeray ‑ news18.com</p>
+                </a>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="Sports">
+              <div class="list-group">
+                <a href="#" class="list-group-item active">
+                  <h4 class="list-group-item-heading">Sports</h4>
+                  <p class="list-group-item-text"> <span class="glyphicon glyphicon-knight"></span><b> Aamer Sohail</b><br>Aamer Sohail Hints Pakistan ‘Fixed’ Champions Trophy ‑ thequint.com</p>
+                  <br><p class="list-group-item-text"> <span class="glyphicon glyphicon-knight"></span><b> India vs. Pakistan </b><br>India vs Pakistan, ICC Champions Trophy 2017 final: Mohammad‑ indianexpress.com</p>
+                  <br><p class="list-group-item-text"> <span class="glyphicon glyphicon-knight"></span><b> Murali Vijay</b><br>Murali Vijay, India opener, confident of being fit in time for Sri Lanka‑ hindustantimes.com</p>
+                  <br><p class="list-group-item-text"> <span class="glyphicon glyphicon-knight"></span><b> Mitchell Starc</b><br>O'Keefe dropped, Starc injured for Australia's tour of Bangladesh ‑ abc.net.au</p>
+                </a>
+              </div>
+            </div>
+          </div>
 
-               </a>
-             </div>
-           </div>
-
-           <div role="tabpanel" class="tab-pane" id="politics">
-             <div class="list-group">
-               <a href="#" class="list-group-item active">
-                 <h4 class="list-group-item-heading">Bhartiya Janata Party</h4>
-                 <p class="list-group-item-text">
-                   <span>
-                    BJP creates history, wins Shimla Municipal Corporation-<a href="#">indianexpress.com</a>
-                  </span>
-                 </p>
-               </a>
-             </div>
-
-             <div class="list-group">
-               <a href="#" class="list-group-item active">
-                 <h4 class="list-group-item-heading">Pranab Mukherjee</h4>
-                 <p class="list-group-item-text">
-                   <span>
-                    President Pranab Mukherjee inaugurates phase 1 of Bengaluru..-<a href="#">indianexpress.com</a>
-                  </span>
-                 </p>
-               </a>
-             </div>
-           </div>
-
-           <div role="tabpanel" class="tab-pane" id="sports">
-             <div class="list-group">
-               <a href="#" class="list-group-item active">
-                 <h4 class="list-group-item-heading">Tennis</h4>
-                 <p class="list-group-item-text">
-                   <span>
-                    Roger Federer stunned by Tommy Haas on return..-<a href="#">hindustantimes.com</a>
-                  </span>
-                 </p>
-               </a>
-             </div>
-
-             <div class="list-group">
-               <a href="#" class="list-group-item active">
-                 <h4 class="list-group-item-heading">India vs. Pakistan</h4>
-                 <p class="list-group-item-text">
-                   <span>
-                    India vs Pakistan, ICC Champions Trophy Final,:5 most..-<a href="#">hindustantimes.com</a>
-                  </span>
-                 </p>
-               </a>
-             </div>
-           </div>
         </div>
-
       </div>
+      <!--sidebar ends-->
+    </div>
   </div>
-  <!--third column-the sidebar ends-->
-</div>
-
-
 
 
   <!--footer start-->
@@ -548,3 +547,5 @@
     </ul>
     <!--footer ends-->
 </body>
+Contact GitHub API Training Shop Blog About
+© 2017 GitHub, Inc. Terms Privacy Security Status Help
