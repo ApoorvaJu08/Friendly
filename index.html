@@ -37,93 +37,96 @@
    font-size: 20px;
   }
   #header .navbar-nav.navbar-right li span .badge{
-  background-color: red;
-  font-size: 11px;
-  padding: 0px 1px 1px 1px;
-  position: absolute;
-  top: 0px;
-  right: 0px;
+    display: inline-block;
+    background-color: red;
+    font-size: 11px;
+    padding: 0px 1px 1px 1px;
+    top: 0px;
+    right: 0px;
   }
   #logo {
-  display: inline;
-  height: 50px;
-  padding-bottom: 20px;
-  padding-top: -7px;
+    display: inline;
+    height: 50px;
+    padding-bottom: 20px;
+    padding-top: -7px;
   }
   #search {
-  width: 300px;
-  height: 28px;
-  margin-top: 10px;
+    width: 100%;
+    height: 28px;
+    margin-top: 10px;
+    float: left;
   }
   #search-icon {
-  width: 35px;
-  height: 28px;
-  margin-top: 10px;
+    height: 28px;
+    margin-top: 10px;
+  }
+  .textbrand {
+    color: white !important;
   }
   #wrapper {
-   margin-top: 16px;
-   margin-bottom: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
   }
   #menu, #main, #sidebar {
-   height: 800px;
+    height: 800px;
   }
   #main {
-   overflow: auto;
+    overflow: auto;
   }
   #day {
-   position: relative;
-   width: 250px;
-   height: 50px;
+    position: relative;
+    width: 250px;
+    height: 50px;
   }
   #dsy {
-   background-color: gray;
-   padding-left: 10px;
-   padding-top: 10px;
-   padding-bottom: 10px;
-   padding-right: 10px;
-   color: black;
+    background-color: gray;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    color: black;
   }
   #main::-webkit-scrollbar {
-  display: none;
+    display: none;
   }
   .comment {
-  margin: 0;
+    margin: 0;
   }
   .list-heading {
-   padding: 20px 15px 0 15px;
+    padding: 20px 15px 0 15px;
   }
   .nav-stacked a {
-   color: black;
+    color: black;
   }
   #circle {
-   float: right;
+    float: right;
   }
   #like-span {
-   margin-right: 10px;
+    margin-right: 10px;
   }
   #comment-span {
-   margin-right: 10px;
+    margin-right: 10px;
   }
   #emoji {
-   height: 40px;
-   width: 30px;
-   bottom: 0px;
+    height: 40px;
+    width: 30px;
+    bottom: 0px;
   }
   .panel-body .glyphicon {
-   margin-left: 10px;
-   margin-right: 4px;
+    margin-left: 10px;
+    margin-right: 4px;
   }
   .text-post {
-   margin-bottom: 15px;
-   margin-top: 0;
+    margin-bottom: 15px;
+    margin-top: 0;
   }
   #img-post {
-   height: 350px;
-   width: 570px;
+    height: 350px;
+    width: 570px;
   }
   .carousel-inner img {
-  width: 100%; /* Set width to 100% */
-  margin: auto;
+    width: 100%; /* Set width to 100% */
+    margin: auto;
   }
   </style>
 </head>
@@ -153,9 +156,9 @@
     <ul class="nav navbar-nav navbar-right">
       <li><span><img src="https://fb-s-c-a.akamaihd.net/h-ak-fbx/v/t1.0-1/p160x160/14729115_188456914934329_8769368999607280431_n.jpg?oh=98aed2c55996a600d7f84e2ba33e0245&oe=59DC1092&__gda__=1507509250_d750db88576e0b2e7142af9a72d8df96"><a href="#" id="white-text">Apoorva</a></span></li>
       <li><a href="#" id="white-text"><span>Home</span></a></li>
-      <li title="friend-request"><a href="#" id="white-text"><span class="glyphicon glyphicon-user" aria-hidden="true"><span class="badge">2</span></span></a></li>
-      <li title="messages"><a href="#" id="white-text"><span class="glyphicon glyphicon-envelope" aria-hidden="true"><span class="badge">8</span></span></a></li>
-      <li title="notifications"><a href="#" id="white-text"><span class="glyphicon glyphicon-globe" aria-hidden="true"><span class="badge">16</span></span></a></li>
+      <li title="friend-request"><a href="#" id="white-text"><span class="glyphicon glyphicon-user" aria-hidden="true"><span class="badge pull-right-md" id="notification">2</span></span></a></li>
+      <li title="messages"><a href="#" id="white-text"><span class="glyphicon glyphicon-envelope" aria-hidden="true"><span class="badge pull-right-md">8</span></span></a></li>
+      <li title="notifications"><a href="#" id="white-text"><span class="glyphicon glyphicon-globe" aria-hidden="true"><span class="badge pull-right-md">16</span></span></a></li>
       <li title="help"><a href="#" id="white-text"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a></li>
       <li title="saved-posts"><a href="#" id="white-text"><span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span></a></li>
       <li title="settings"><a href="#" id="white-text"><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a></li>
@@ -512,7 +515,7 @@
 
           <!-- Tab panes -->
           <div class="tab-content">
-            <div role="tabpanel" class="tab-pane active" id="top">
+            <div role="tabpanel" class="tab-pane active" id="Top Trends">
               <div class="list-group">
                 <a href="#" class="list-group-item active">
                   <h4 class="list-group-item-heading">Top Trends</h4>
