@@ -1,0 +1,117 @@
+.container-nav {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+   }
+   #header {
+    background-color: #4267b2;
+    color: white;
+   }
+   #white-text {
+    color: white;
+   }
+   img {
+    height: 50px;
+    width: 40px;
+    display: inline-block;
+    position: relative;
+    padding-top: 7px;
+    padding-bottom: 4px;
+    margin-right: 5px;
+   }
+   #header ul .glyphicon {
+    font-size: 20px;
+   }
+   #header .navbar-nav.navbar-right li span .badge{
+     display: inline-block;
+     background-color: red;
+     font-size: 11px;
+     padding: 0px 1px 1px 1px;
+     top: 0px;
+     right: 0px;
+   }
+   #logo {
+     display: inline;
+     height: 50px;
+     padding-bottom: 20px;
+     padding-top: -7px;
+   }
+   #search {
+     width: 100%;
+     height: 28px;
+     margin-top: 10px;
+     float: left;
+   }
+   #search-icon {
+     height: 28px;
+     margin-top: 10px;
+   }
+   .textbrand {
+     color: white !important;
+   }
+   #wrapper {
+     margin-top: 16px;
+     margin-bottom: 16px;
+   }
+   #menu, #main, #sidebar {
+     height: 800px;
+   }
+   #main {
+     overflow: auto;
+   }
+   #day {
+     position: relative;
+     width: 250px;
+     height: 50px;
+   }
+   #dsy {
+     background-color: gray;
+     padding-left: 10px;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     padding-right: 10px;
+     color: black;
+   }
+   #main::-webkit-scrollbar {
+     display: none;
+   }
+   .comment {
+     margin: 0;
+   }
+   .list-heading {
+     padding: 20px 15px 0 15px;
+   }
+   .nav-stacked a {
+     color: black;
+   }
+   #circle {
+     float: right;
+   }
+   #like-span {
+     margin-right: 10px;
+   }
+   #comment-span {
+     margin-right: 10px;
+   }
+   #emoji {
+     height: 40px;
+     width: 30px;
+     bottom: 0px;
+   }
+   .panel-body .glyphicon {
+     margin-left: 10px;
+     margin-right: 4px;
+   }
+   .text-post {
+     margin-bottom: 15px;
+     margin-top: 0;
+   }
+   #img-post {
+     height: 350px;
+     width: 570px;
+   }
+   .carousel-inner img {
+     width: 100%; /* Set width to 100% */
+     margin: auto;
+   }
