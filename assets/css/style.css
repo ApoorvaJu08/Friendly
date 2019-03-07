@@ -1,4 +1,50 @@
-.container-nav {
+.navbar-default {
+  border-color: transparent;
+  border-radius: 0;
+}
+
+.header {
+  background-color: #4267b2;
+  color: white;
+}
+
+.navbar-brand {
+  padding: 10px 15px;
+}
+
+.fb-icon { 
+  height: 30px;
+  width: 60px;
+}
+
+.header-symbol {
+  font-size: 18px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white;
+}
+
+.badge {
+  padding: 2px 4px 2px 4px;
+  background-color: red !important;
+  border-radius: 4px;
+  color: #fff;
+  vertical-align: top;
+  font-size: 9px;
+}
+
+.header-dropdown-options {
+  font-size: 12px;
+}
+
+.profile-pic {
+  height: 25px;
+  margin-right: 5px;
+  width: 25px;
+  border-radius: 50%;
+}
+/* .container-nav {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
@@ -11,15 +57,7 @@
    #white-text {
     color: white;
    }
-   img {
-    height: 50px;
-    width: 40px;
-    display: inline-block;
-    position: relative;
-    padding-top: 7px;
-    padding-bottom: 4px;
-    margin-right: 5px;
-   }
+   
    #header ul .glyphicon {
     font-size: 20px;
    }
@@ -49,7 +87,7 @@
    }
    .textbrand {
      color: white !important;
-   }
+   } */
    #wrapper {
      margin-top: 16px;
      margin-bottom: 16px;

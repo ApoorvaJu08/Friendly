@@ -14,41 +14,98 @@
 </head>
 <body id="top">
   <!--header starts-->
-    <nav class="navbar navbar-default" id="header">
-    <div class="container-nav">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-         <span class="icon-bar"></span>
-         <span class="icon-bar"></span>
-         <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUNFXXrd4ZGV23fw_gA3Sg5h5iddoLqwYUqXNWDT4ys21cGlL5RQ"  id="logo"></a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-    <form class="navbar-form navbar-left">
-       <div class="input-group">
-          <input type="text" class="form-control" id="search" placeholder="Search">
-          <div class="input-group-btn">
-             <button class="btn btn-default" id="search-icon" type="submit">
-                <i class="glyphicon glyphicon-search"></i>
-             </button>
+  <nav class="navbar navbar-default header">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <img src="assets/images/fb-icon.png" class="fb-icon">
+        </a>
+      </div>
+    
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <form class="navbar-form navbar-left">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" aria-describedby="basic-addon2">
+            <span class="input-group-addon" id="basic-addon2">
+              <i class="glyphicon glyphicon-search"></i>
+            </span>
           </div>
-       </div>
-    </form>
-    <ul class="nav navbar-nav navbar-right">
-      <li><span><img src="https://fb-s-c-a.akamaihd.net/h-ak-fbx/v/t1.0-1/p160x160/14729115_188456914934329_8769368999607280431_n.jpg?oh=98aed2c55996a600d7f84e2ba33e0245&oe=59DC1092&__gda__=1507509250_d750db88576e0b2e7142af9a72d8df96"><a href="#" id="white-text">Apoorva</a></span></li>
-      <li><a href="#" id="white-text"><span>Home</span></a></li>
-      <li title="friend-request"><a href="#" id="white-text"><span class="glyphicon glyphicon-user" aria-hidden="true"><span class="badge pull-right-md" id="notification">2</span></span></a></li>
-      <li title="messages"><a href="#" id="white-text"><span class="glyphicon glyphicon-envelope" aria-hidden="true"><span class="badge pull-right-md">8</span></span></a></li>
-      <li title="notifications"><a href="#" id="white-text"><span class="glyphicon glyphicon-globe" aria-hidden="true"><span class="badge pull-right-md">16</span></span></a></li>
-      <li title="help"><a href="#" id="white-text"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a></li>
-      <li title="saved-posts"><a href="#" id="white-text"><span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span></a></li>
-      <li title="settings"><a href="#" id="white-text"><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a></li>
-    </ul>
-  </div>
-  </div>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#">
+              <span>
+                <img src="assets/images/apoorva.jpg" class="profile-pic">
+                <span class="bio-name">Apoorva</span>
+              </span>
+            </a>
+          </li>
+          <li title="friend-request">
+            <a href="#">
+              <span>
+                <i class="glyphicon glyphicon-user header-symbol"></i>
+                <span class="badge pull-right-md" class="notification">2</span>
+              </span>
+            </a>
+          </li>
+          <li title="messages">
+            <a href="#">
+              <span>
+                <i class="glyphicon glyphicon-envelope header-symbol"></i>
+                <span class="badge pull-right-md">8</span>
+              </span>
+            </a>
+          </li>
+          <li title="notifications">
+            <a href="#">
+              <span>
+                <i class="glyphicon glyphicon-globe header-symbol"></i>
+                <span class="badge pull-right-md">16</span>
+              </span>
+            </a>
+          </li>
+          <li title="help">
+            <a href="#">
+              <span>
+                <i class="glyphicon glyphicon-question-sign header-symbol"></i>
+              </span>
+            </a>
+          </li>
+          <li title="saved-posts">
+            <a href="#">
+              <span>
+                <i class="glyphicon glyphicon-piggy-bank header-symbol"></i>
+              </span>
+            </a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <i class="glyphicon glyphicon-triangle-bottom header-symbol"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#" class="header-dropdown-options">New Groups</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#" class="header-dropdown-options">Advertising on Facebook</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#" class="header-dropdown-options">Activity Log</a></li>
+              <li><a href="#" class="header-dropdown-options">News Feed preferences</a></li>
+              <li><a href="#" class="header-dropdown-options">Settings</a></li>
+              <li><a href="#" class="header-dropdown-options">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
   </nav>
-<!--header ends-->
+  <!--header ends-->
 
 <!--grid starts-->
 <div class="container-fluid" id="wrapper">
